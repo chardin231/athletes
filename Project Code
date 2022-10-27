@@ -1,0 +1,30 @@
+install.packages("sqldf")
+library(sqldf)
+library(dplyr) 
+library(ggplot2)
+library(ggthemes)
+db<-read.csv("https://raw.githubusercontent.com/chardin231/athletes/main/BAUN%20Project.csv?token=GHSAT0AAAAAAB2OBS5EBZJEIK4EHYNPTYSEY2ZYVWA", header=TRUE) 
+db$Gender<-as.factor(db$Gender) 
+db$Followers<-as.numeric(db$Followers) 
+db$Year<-as.factor(db$Year)
+db$CollegiateDivison<-as.factor(db$CollegiateDivison) 
+db$Revenue<-as.numeric(db$Revenue)
+db$Revenue[is.na(db$Revenue)]<-0
+db$Followers[is.na(db$Followers)]<-0
+pairs(db[,c(2,6,7,9)])
+pairs(db[,1:5])
+cor(db$Followers,db$Revenue)
+
+#plots
+ggplot(db,aes(x=Gender, y=Revenue)) + 
+  geom_boxplot() +
+  theme_tufte()
+ggplot(db,aes(x=Gender, y=Followers)) + 
+  geom_boxplot() +
+  theme_tufte()
+ggplot(db,aes(x=Gender)) + 
+  geom_bar() +
+  theme_tufte()
+ggplot(db,aes(Followers)) +
+  geom_histogram() +
+  theme_tufte()
