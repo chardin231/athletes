@@ -1,4 +1,4 @@
-Athlete,Followers,CollegiateDivison,Year,NILDeals,P5Conferences,Gender,Verified,Revenue
+Athlete,Followers,CollegiateDivision,Year,NILDeals,P5Conferences,Gender,Verified,Revenue
 1,2083,D1,Freshman,2,1,male,1,33.45
 2,2768,D1,Senior,0,0,male,1,0.00
 3,612,D1,Freshman,0,0,male,1,0.00
@@ -51,7 +51,7 @@ Athlete,Followers,CollegiateDivison,Year,NILDeals,P5Conferences,Gender,Verified,
 50,1409,Club Sport,Junior,1,0,male,0,32.00
 51,2207,D1,Junior,1,0,male,0,24.67
 52,10798,D1,Junior,5,0,male,0,566.21
-53,236789,D1,Senior,13,0,male,11,"6,643.00"
+53,236789,D1,Senior,13,0,male,1,"6,643.00"
 54,11234,D1,Junior,7,1,female,0,"1,344.00"
 55,12346,D1,Junior,3,0,male,0,233.00
 56,2510,D1,Graduate,2,0,female,0,42.00
